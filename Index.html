@@ -27,23 +27,62 @@
         </section>
 
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum ipsum vel culpa, autem, dignissimos nobis ullam atque quidem ratione ipsa neque! Officiis aut nostrum laborum facere nesciunt similique quas ab beatae! Aliquam enim fuga voluptatum officiis repellendus debitis, corrupti consectetur necessitatibus dolorum minus repellat aliquid, consequuntur suscipit accusantium reprehenderit omnis rem? Nesciunt molestias facere iste.</p>
+    
+        <section>
+            <table border="1">
+                <caption>Mensajes de clientes</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Mensaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Analia Perez</td>
+                    <td>Analiap25@hotmail.com</td>
+                    <td>Uno de los libros vino con la tapa doblada, quisiera cambiarlo.</td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align:center; font-weight:bold;">
+                        Mensajes pendientes de respuesta
+                    </td>
+                </tr>
+                <tr>
+                    <td>Juan Ventura</td>
+                    <td>juancho964@gmail.com</td>
+                    <td>Quería agradecer por el excelente servicio. Todo de 10!!</td>
+                </tr>
+                <tr>
+                    <td>Celeste Suarez</td>
+                    <td>suarezceleste@hotmail.com</td>
+                    <td>Hola. Estoy teniendo problemas para finalizar la compra, necesito ayuda.</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
 
-        <form action="https://formspree.io/f/xzebgrqb" method="post">
-            <label for="nombre">Nombre:
-            </label>
-            <input type="text" id="nombre" name="nombre" required> <!-- El id sirve para una identificación dentro del código. Name sirve para el servidor como identificación cuando se envían los datos. -->
-            <br>
-            <label for="correo">Correo Electrónico:
-            </label>
-            <input type="email" id="correo" name="correo" required>
-            <br>
-            <label for="mensaje">Mensaje:
-            </label>
-            <textarea name="mensaje" required>
-            </textarea>
-            <br>
-            <button type="submit">Enviar</button>
-        </form>
+
+        <section>
+            <h3>Contactanos</h3>
+            <form action="https://formspree.io/f/xzebgrqb" method="post">
+                <label for="nombre">Nombre:
+                </label>
+                <input type="text" id="nombre" name="nombre" required> <!-- El id sirve para una identificación dentro del código. Name sirve para el servidor como identificación cuando se envían los datos. -->
+                <br>
+                <label for="correo">Correo Electrónico:
+                </label>
+                <input type="email" id="correo" name="correo" required>
+                <br>
+                <label for="mensaje">Mensaje:
+                </label>
+                <textarea name="mensaje" required>
+                </textarea>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
 
     </main>
     <footer>
