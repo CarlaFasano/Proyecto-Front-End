@@ -1,0 +1,59 @@
+.header {
+    background-color: lavender;
+}
+
+.header__title {
+    color:rgb(85, 85, 85);
+    font-style: normal;
+}
+
+.header__subtitle {
+    font-style: italic;
+    color: indigo;
+}
+
+.footer {
+    background-color:lightslategrey;
+}
+
+.footer__list {
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+    align-items: flex-start;
+}
+
+.footer__link {
+    text-decoration: none;
+    color:black;
+}
+
+
+.intro-text__text{
+    font-size:large;
+    font-weight: bold;
+    background-color:mediumpurple;
+    color:indigo;
+    text-align: center;
+}
+
+.contacto {
+    margin-top: 60px;
+}
+
+.contacto__form {
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    align-items: flex-start;
+}
+
+.nav__list {
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color:green;
+}
