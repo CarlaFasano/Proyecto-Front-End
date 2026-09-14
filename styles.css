@@ -1,15 +1,23 @@
-.header {
-    background-color: lavender;
+body {
+    background-image: url('bookstack.jpg');
+    color:white;
+    background-position: top right;
+    background-size: auto;
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+
 }
 
 .header__title {
     color:rgb(85, 85, 85);
     font-style: normal;
+    font-family: 'DM sans', sans-serif;
 }
 
 .header__subtitle {
     font-style: italic;
-    color: indigo;
+    color: rgb(85, 85, 85);
+    font-family: 'DM sans', sans-serif;
 }
 
 .footer {
@@ -34,8 +42,13 @@
     font-size:large;
     font-weight: bold;
     background-color:mediumpurple;
-    color:indigo;
+    color:rgb(85, 85, 85);
     text-align: center;
+    font-family: 'karla', sans-serif;
+}
+
+.comments-table{
+    color:black;
 }
 
 .contacto {
@@ -47,6 +60,7 @@
     flex-direction:column;
     gap:4px;
     align-items: flex-start;
+    color:black;
 }
 
 .nav__list {
@@ -55,5 +69,5 @@
 
 .nav__link {
     text-decoration: none;
-    color:green;
+    color:black;
 }
