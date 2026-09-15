@@ -71,3 +71,9 @@ body {
     text-decoration: none;
     color:black;
 }
+
+.nav__link i { 
+    font-size: 15px; 
+    color: black;
+    margin-right: 6px;
+}
