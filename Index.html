@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Página principal - Tienda TBR</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
@@ -19,10 +19,9 @@
 
             <nav class="flex-nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#">Inicio</a></li>
+                    <li class="nav__item"><a class="nav__link" href="Index.html">Inicio</a></li>
                     <li class="nav__item"><a class="nav__link" href="#">Productos</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Contacto</a></li>
-                    <!-- poner inicio, productos y contacto en el medio, y en otra lista poner el carrito y mi cuenta -->
+                    <li class="nav__item"><a class="nav__link" href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
 
@@ -33,59 +32,95 @@
 
         </header>
 
+        <section class="hero">
+            <h2 class="hero__title">¿Cuál va a ser el próximo libro en tu pila? ¡Descubrilo acá!</h2>
+            <img src="logo.png" width="550" height="400">
+        </section>
+
         <main>
             <section class="products">
-                <!-- poner de título productos destacados o algo así -->
-                <article class="products__item">
-                    <img class="products__picture"  src="Animal_Farm.jpeg" alt="Libro Animal Farm George Orwell" width="230" height="300">
-                    <a class="products__link" href="#"><h3 class="products__title">Libro Animal Farm</h3></a>
-                    <p class="products__description">Libro usado. En inglés. Tamaño bolsillo.</p>
-                    <p class="products__price">$5000</p>
-                    <button class="products__button" type="button"><i class="fa-solid fa-cart-shopping"></i> Agregar al carrito</button>
-                </article>
+                <h2 class="products__heading">Productos Destacados</h2>
 
-                <article class="products__item">
-                    <img class="products__picture" src="1984.jpeg" alt="Libro 1984 George Orwell" width="230" height="300">
-                    <a class="products__link" href="#"><h3 class="products__title">Libro 1984</h3></a>
-                    <p class="products__description">Libro usado. En español. Edición especial.</p>
-                    <p class="products__price">$10000</p>
-                    <button class="products__button" type="button"><i class="fa-solid fa-cart-shopping"></i> Agregar al carrito</button>
-                </article>
+                <div class="products__grid">
+                    <article class="products__item">
+                        <img class="products__picture"  src="Animal_Farm.jpeg" alt="Libro Animal Farm George Orwell" width="230" height="300">
+                        <a class="products__link" href="#"><h3 class="products__title">Libro Animal Farm</h3></a>
+                        <p class="products__description">Libro usado. En inglés. Tamaño bolsillo.</p>
+                        <p class="products__price">$5000</p>
+                        <button class="products__button" type="button"><i class="fa-solid fa-cart-shopping"></i> Agregar al carrito</button>
+                    </article>
 
-                <article class="products__item">
-                    <img class="products__picture" src="LaNiñaGorda.jpeg" alt="Libro La Niña Gorda" width="230" height="300">
-                    <a class="products__link" href="#"><h3 class="products__title">Libro La Niña Gorda</h3></a>
-                    <p class="products__description">Libro nuevo. En español. Tapa blanda.</p>
-                    <p class="products__price">$15000</p>
-                    <button class="products__button" type="button"><i class="fa-solid fa-cart-shopping"></i> Agregar al carrito</button>
-                </article>
+                    <article class="products__item">
+                        <img class="products__picture" src="1984.jpeg" alt="Libro 1984 George Orwell" width="230" height="300">
+                        <a class="products__link" href="#"><h3 class="products__title">Libro 1984</h3></a>
+                        <p class="products__description">Libro usado. En español. Edición especial.</p>
+                        <p class="products__price">$10000</p>
+                        <button class="products__button" type="button"><i class="fa-solid fa-cart-shopping"></i> Agregar al carrito</button>
+                    </article>
 
-                <!-- Acá va a ir una cuadrícula con los géneros de libros. tendría que hacerlo grid también -->
+                    <article class="products__item">
+                        <img class="products__picture" src="LaNiñaGorda.jpeg" alt="Libro La Niña Gorda" width="230" height="300">
+                        <a class="products__link" href="#"><h3 class="products__title">Libro La Niña Gorda</h3></a>
+                        <p class="products__description">Libro nuevo. En español. Tapa blanda.</p>
+                        <p class="products__price">$15000</p>
+                        <button class="products__button" type="button"><i class="fa-solid fa-cart-shopping"></i> Agregar al carrito</button>
+                    </article>
+                </div>
             </section>
 
-            
-            <section class="contacto">
-                <h3 class="contacto__title">Contactanos</h3>
-                <form class="contacto__form" action="https://formspree.io/f/xzebgrqb" method="post">
-                    <label class="contacto__label" for="nombre">Nombre:</label>
-                    <input class="contacto__input" type="text" id="nombre" name="nombre" required> <!-- El id sirve para una identificación dentro del código. Name sirve para el servidor como identificación cuando se envían los datos. -->
-                    <label class="contacto__label" for="correo">Correo Electrónico:</label>
-                    <input class="contacto__input" type="email" id="correo" name="correo" required>
-                    <label class="contacto__label" for="mensaje">Mensaje:</label>
-                    <textarea class="contacto__textarea" id="mensaje" name="mensaje" required></textarea>
-                    <button class="contacto__button" type="submit">Enviar</button>
-                </form>
-            </section>
+            <section class="genres">
+                <h2 class="genres__heading">Libros por Género</h2>
 
+                <div class="genres__grid">
+                    <article class="genres__item">
+                        <img class="genres__picture" src="sci-fi.jpg" alt="Género Ciencia Ficción" width="350" height="250">
+                        <a class="genres__link" href="#"><h3 class="genres__title">Ciencia Ficción</h3></a>
+                    </article>
+
+                    <article class="genres__item">
+                        <img class="genres__picture" src="Horror.webp" alt="Género Terror" width="350" height="250">
+                        <a class="genres__link" href="#"><h3 class="genres__title">Terror</h3></a>
+                    </article>
+
+                    <article class="genres__item">
+                        <img class="genres__picture" src="Fantasy.webp" alt="Género Fantasía" width="300" height="300">
+                        <a class="genres__link" href="#"><h3 class="genres__title">Fantasía</h3></a>
+                    </article>
+
+                    <article class="genres__item">
+                        <img class="genres__picture" src="we-dystopia.jpg" alt="Género Distópico" width="280" height="300">
+                        <a class="genres__link" href="#"><h3 class="genres__title">Distopia</h3></a>
+                    </article>
+
+                    <article class="genres__item">
+                        <img class="genres__picture" src="young-adult.jpg" alt="Género Young Adult" width="280" height="300">
+                        <a class="genres__link" href="#"><h3 class="genres__title">Young Adult</h3></a>
+                    </article>
+
+                    <article class="genres__item">
+                        <img class="genres__picture" src="Poetry.jpg" alt="Género Poesía" width="280" height="300">
+                        <a class="genres__link" href="#"><h3 class="genres__title">Poesía</h3></a>
+                    </article>
+                </div>
+
+            </section>
         </main>
 
         <footer class="footer">
             <ul class="footer__list">
-                <li class="footer__item"><a class="footer__link" href="#">Contacto</a></li>
+                <li class="footer__item"><a class="footer__link" href="contacto.html">Contacto</a></li>
                 <li class="footer__item"><a class="footer__link" href="#">Preguntas frecuentes</a></li>
                 <li class="footer__item"><a class="footer__link" href="#">Sobre nosotros</a></li>
+                <li class="footer__item"><p class="footer__text">© 2026 Tienda TBR. Todos los derechos reservados.</p></li>
             </ul>
-            <p>© 2026 Tienda TBR. Todos los derechos reservados.</p>
+
+            <ul class="footer__social">
+                <li class="footer__item"><a class="footer__link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="footer__item"><a class="footer__link" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="footer__item"><a class="footer__link" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="footer__item"><a class="footer__link" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+
         </footer>
     </div>
     
