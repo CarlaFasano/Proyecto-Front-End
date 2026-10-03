@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('bookstack.jpg');
+    background-image: url('../pictures/bookstack.png');
     color:white;
     background-position: top right;
     background-size: auto;
@@ -38,20 +38,20 @@ body {
     font-family: 'DM sans', sans-serif;
 }
 
-.nav__list {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-    font-family: 'DM sans', sans-serif;
-    font-size: 18px;
-}
-
 .header__actions {
     display: flex;
     list-style: none;
     gap: 1.5rem;
     font-family: 'DM sans', sans-serif;
     font-size: 18px;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-family: 'DM sans', sans-serif;
+    font-size: 19px;
 }
 
 .nav__link {
@@ -64,6 +64,24 @@ body {
     font-size: 15px; 
     margin-right: 6px;
 }
+
+.hero {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../pictures/hero-background.png);
+    background-repeat: repeat;
+    background-size: 120px;
+    padding: 1rem 0 2rem 0;
+}
+
+.hero__title {
+    color: rgb(85, 85, 85);
+    margin: 1rem 0 1.2rem 0;
+    font-style: italic;
+    font-size: 26px;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -100,12 +118,12 @@ body {
 }
 
 .contact__textarea {
-    width: 100%;
+    width: 100%;  /* El área de texto ocupa el 100% del ancho del formulario. */
     min-height: 100px;
     padding: 10px;
     font-size: 14px;
-    resize: vertical;
-    font-family: inherit;
+    resize: vertical;   /* Esto sirve para poder agrandar manualmente el área de texto hacia abajo. */
+    font-family: inherit;   /* Hereda la fuente del elemento padre, es decir, del contact__form */
 }
 
 .contact__button {
@@ -142,7 +160,6 @@ body {
     display:flex;
     flex-direction: column;
     background-color: #ceaef4;
-    color: white;
     text-align: center;
     justify-content: space-between;
     min-height: 380px;
@@ -193,7 +210,6 @@ body {
     font-weight: bolder;
 }
 
-
 .genres {
     padding: 20px 20px;
     width: fit-content;
@@ -214,17 +230,14 @@ body {
     grid-template-rows: auto auto;
     justify-content: center;
     align-items: center;
-
 }
 
 .genres__item {
     display:flex;
     flex-direction: column;
     background-color: #ceaef4;
-    color: white;
     text-align: center;
-    justify-content: space-between;
-    min-height: 200px;
+    min-height: 200px;  /* La caja va a crecer lo que necesite de acuerdo al contenido. */
     width: 250px;
     padding: 10px;
     margin:10px;
@@ -247,6 +260,61 @@ body {
 
 .genres__link {
     text-decoration: none;
+}
+
+.reviews {
+    padding: 20px 20px;
+    width: fit-content;
+    margin: 40px auto 0;
+    text-align: center;
+    background-color:rgb(241, 241, 227);
+}
+
+.reviews__heading {
+    color: rgb(85, 85, 85) ;
+    font-size: 30px;
+    font-family: 'DM sans', sans-serif;
+}
+
+.reviews__grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.reviews__item {
+    display:flex;
+    flex-direction: column;
+    border-style: double;
+    border-color: rgb(85, 85, 85);
+    text-align: center;
+    justify-content: space-between;
+    height: 200px;
+    width: 250px;
+    padding: 12px;
+    margin:10px;
+    border-radius: 8px;
+}
+
+.reviews__text {
+    color: rgb(85, 85, 85);
+    font-style: italic;
+    font-size: 17px;
+    font-weight: bolder;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.reviews__signature {
+    align-self: flex-end;
+    color: rgb(85, 85, 85);
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 10px;
+    font-family: 'DM sans', sans-serif
 }
 
 .footer {
@@ -277,9 +345,11 @@ body {
     font-weight: bolder;
 }
 
-
 .footer__social {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     gap:13px;
     list-style: none;
 }
@@ -293,4 +363,54 @@ body {
     font-size: 14px;
     color:rgb(74, 72, 72);
     font-family: 'DM sans', sans-serif;
+}
+
+.footer__item--network {
+    flex-basis: 100%; /* Esto sirve para que @TiendaTBR ocupe el 100% del ancho de la pantalla y el flex-wrap de footer__social empuje los iconos de redes sociales hacia abajo.  */
+    text-align: right;
+}
+
+.footer__network {
+    font-size: 16px;
+    font-weight: bolder;
+    color:rgb(74, 72, 72);
+    font-family: 'DM sans', sans-serif;
+}
+
+/* Media Queries */
+
+/* Celulares */
+@media (max-width: 600px) {
+    .contact {
+        max-width: 380px;
+        padding: 25px;
+        margin: 30px auto;
+    }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width:1024px) {
+    .contact {
+        max-width: 410px;
+        padding: 30px;
+        margin: 40px auto;
+    }
+}
+
+/* Laptops y monitores medianos */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .contact {
+        max-width: 450px;
+        padding: 30px;
+        margin: 60px auto;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1441px) {
+    .contact {
+        max-width: 500px;
+        padding: 40px;
+        margin: 80px auto;
+    }
 }
